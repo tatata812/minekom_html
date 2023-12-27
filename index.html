@@ -1,0 +1,109 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>美祢工務店</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <a href="#" class="header__tel-wrap header__item"><img src="assets/img/top/header-tel.png"
+          class="header__tel"></a>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu01.png" class="header__menu-img"></a>
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu02.png" class="header__menu-img"></a>
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu03.png" class="header__menu-img"></a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <img src="assets/img/top/header-btn.png" class="header__btn">
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-top">
+
+    <div class="main-visual">
+      <div class="main-visual__top main-visual-js">
+        <div class="main-visual__top-img">
+          <img src="assets/img/top/main-viisual01.jpg">
+        </div>
+        <div class="main-visual__top-img">
+          <img src="assets/img/top/main-viisual02.jpg">
+        </div>
+      </div>
+      <div class="main-visual__thumbnail main-thumbnail-js">
+
+        <div class="main-visual__thumbnail-item">
+          <img class="main-visual__thumbnail-img" src="assets/img/top/main-humbnail01.jpg">
+        </div>
+        <div class="main-visual__thumbnail-item">
+          <img class="main-visual__thumbnail-img" src="assets/img/top/main-humbnail02.jpg">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--main end-->
+
+
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@mixin sp {
+  @media (max-width:(600px)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width:(820px)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width:(1120px)) {
+    @content;
+  }
+}
+
+
+* {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.8;
+
+}
+
+p {
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  color: #080808;
+
+}
+
+a {
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  color: #080808;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+}
+
+.pc-block {
+  display: block;
+
+  @include tab {
+    display: none;
+  }
+}
+
+.sp-block {
+  display: none;
+
+  @include tab {
+    display: block;
+  }
+}
+
+
+
+.main {
+  padding: 88px 0 0;
+
+
+
+  @include tab {
+    padding: 60px 0 0 0;
+  }
+
+
+
+  &__section-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 12px;
+
+    @include sp {
+      padding: 40px 20px;
+    }
+  }
+
+
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+}
+
+
+
+// Slick設定
+
+.slick-prev:before {
+  background: url(../img/top/main-visual-arrow_l.png) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  font-size: 36px;
+  opacity: 1 !important;
+
+}
+
+.slick-next:before {
+  background: url(../img/top/main-visual-arrow_r.png) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  font-size: 36px;
+  opacity: 1 !important;
+
+
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1b1464 !important;
+  opacity: 1 !important;
+
+}
+
+// エディター設定
+
+.page-style {
+  &__block {
+    margin: 0 0 60px;
+  }
+
+  .aligncenter {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .alignright {
+    display: block;
+    margin-left: auto;
+  }
+
+  p {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 24px 0 32px;
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 24px 0 20px;
+    color: #002e73;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 24px 0 16px;
+
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  ol {
+    margin: 0 0 12px 24px;
+    line-height: 24px;
+
+    li {
+      font-size: 18px;
+      list-style: decimal;
+    }
+  }
+
+  ul {
+    margin: 0 0 12px 24px;
+    line-height: 24px;
+
+    li {
+      font-size: 18px;
+      list-style: disc;
+    }
+  }
+
+  li {
+    font-size: 18px;
+  }
+}
