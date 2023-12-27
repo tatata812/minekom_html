@@ -41,7 +41,7 @@ $(function () {
     asNavFor: ".main-thumbnail-js",
   });
   $(".main-thumbnail-js").slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     asNavFor: ".main-visual-js",
     focusOnSelect: true,
   });

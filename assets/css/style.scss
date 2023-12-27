@@ -23,13 +23,15 @@
 /* =================================
 header
  ================================= */
-
 .header {
   position: fixed;
   z-index: 999;
   top: 0;
   width: 100%;
   transition: transform 0.3s;
+  background-color: #fff;
+  height: 88px;
+
 
   @include tab {
     height: 60px;
@@ -211,12 +213,21 @@ header
  ================================= */
 
 .main-visual {
+  position: relative;
+  padding: 0 0 160px;
+
+  @include pc{
+    padding: 0 0 120px;
+  }
+
+  @include tab{
+    padding: 0 0 40px;
+
+  }
 
   &__top {
     max-width: 1280px;
     margin: 0 auto;
-
-
 
     @include tab {
       width: 100%;
@@ -228,66 +239,92 @@ header
   }
 
   &__thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+    transform: translateX(-50%);
+  
 
+    @include pc {
+      bottom: 12px;
+      left: 30%;
+    }
 
-    @include tab {
-      width: 100%;
-      margin: 0 0 16px;
-      display: flex;
-      flex-wrap: wrap;
+    @include tab{
+    display: none;
     }
   }
 
 
   &__thumbnail-item {
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin: 0 0 12px;
+    width: 100px!important;
+    margin: 0 4px;
+
 
 
     &.slick-current img{
       opacity: 1;
+      border: red solid 2px;
     }
 
 
     @include tab {
-      width: 50%;
-      margin: 0 0 16px;
+  
     }
 
 
   }
 
   &__thumbnail-img {
-    width: 150px;
+    width: 100px!important;
     opacity: 0.5;
+    padding: 1px;
 
 
     @include sp {
       width: 120px;
     }
+
+
   }
 
-  &__right-span {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #e6e6e6;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    font-weight: bold;
+  &__img-wrap {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    transform: translateX(50%);
 
+    @include pc{
+      right: 20%;
+    }
 
-    @include tab {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+    @include tab{
+      transform: translateX(0);
+      right: 7%;
+
     }
   }
+
+  &__img {
+    width: 480px;
+
+    @include pc{
+      width: 280px;
+    }
+
+    @include tab{
+      width: 180px;
+
+    }
+
+    @include sp{
+      width: 120px;
+
+    }
+  }
+
+
 }
 
 .aaa {
