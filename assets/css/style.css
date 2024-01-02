@@ -75,6 +75,7 @@ li {
     padding: 40px 20px;
   }
 }
+
 .top-style__section {
   max-width: 1200px;
   margin: 0 auto;
@@ -84,20 +85,66 @@ li {
   max-width: 480px;
   margin: 0 auto;
 }
+.btn-style {
+  width: 320px;
+  margin: 0 auto;
+}
+.btn-style__btn {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #dc0000;
+  border: 1px solid #dc0000;
+  box-sizing: border-box;
+  padding: 0 45px 0 25px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.btn-style__btn:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -6px;
+}
+.btn-style__btn:hover {
+  background: #fff;
+  color: #dc0000;
+}
+.btn-style__btn:hover:before {
+  border-top: 2px solid #dc0000;
+  border-right: 2px solid #dc0000;
+}
+
 .slick-prev:before {
-  background: url(../img/top/main-visual-arrow_l.png) !important;
+  background: url(../img/top/slick-arrow_l.png) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
-  font-size: 36px;
+  font-size: 40px;
   opacity: 1 !important;
+  color: transparent;
 }
 
 .slick-next:before {
-  background: url(../img/top/main-visual-arrow_r.png) !important;
+  background: url(../img/top/slick-arrow_r.png) !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
-  font-size: 36px;
+  font-size: 40px;
   opacity: 1 !important;
+  color: transparent;
 }
 
 .slick-dots li.slick-active button:before {
@@ -965,6 +1012,11 @@ header
   position: relative;
   margin: 200px auto 152px;
 }
+@media (max-width: 600px) {
+  .top-works__ttl {
+    margin: 150px auto 152px;
+  }
+}
 .top-works__ttl:before {
   content: url(../img/top/top-works-ttl-bg.png);
   z-index: -10;
@@ -1054,14 +1106,37 @@ header
 .top-works-item__img01 {
   padding: 0 24px 0 0;
   margin: 0 0 16px;
+  width: 350px;
+}
+@media screen and (max-width: 380px) {
+  .top-works-item__img01 {
+    width: 280px;
+  }
+}
+.top-works-item__img01 img {
+  overflow: hidden;
 }
 .top-works-item__img02 {
   padding: 0 0 0 24px;
   margin: 0 0 16px;
+  width: 350px;
+}
+@media (max-width: 600px) {
+  .top-works-item__img02 {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  .top-works-item__img02 {
+    width: 280px;
+  }
+}
+.top-works-item__img02 img {
+  overflow: hidden;
 }
 .top-works-item__point {
   max-width: 180px;
-  margin: 0 0 4px;
+  margin: -50px 0 4px;
 }
 .top-works-item__point-ttl {
   border-top: #dc0000 dotted 3px;
@@ -1076,6 +1151,74 @@ header
   font-size: 13px;
   line-height: 1.5;
   color: #666666;
+}
+/* =================================
+お知らせ
+ ================================= */
+.top-news {
+  overflow: hidden;
+}
+.top-news__ttl {
+  position: relative;
+  margin: 240px auto 220px;
+  padding: 80px 0 0;
+}
+@media (max-width: 600px) {
+  .top-news__ttl {
+    margin: 150px auto 152px;
+  }
+}
+.top-news__ttl:before {
+  content: url(../img/top/top-news-ttl-bg.png);
+  z-index: -10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-news__content {
+  max-width: 1080px;
+  margin: 0 auto 60px !important;
+}
+.top-news__content .slick-prev {
+  left: -37px;
+  top: 30%;
+}
+.top-news__content .slick-next {
+  right: -25px;
+  top: 30%;
+}
+.top-news__item {
+  margin: 0 12px;
+}
+.top-news__cat {
+  background-color: #a3a3a3;
+  color: #fff;
+  padding: 0 2px;
+  display: inline-block;
+  margin: 0 0 8px;
+}
+.top-news__img {
+  margin: 0 0 8px;
+}
+.top-news__item-ttl {
+  font-weight: normal;
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.3;
+}
+.top-news__time {
+  font-size: 14px;
+  display: block;
+  color: #a3a3a3;
+  position: relative;
+}
+.top-news__time:after {
+  content: url(../img/top/top-news-arrow.png);
+  position: absolute;
+  top: 0;
+  right: 16px;
+  transform: scale(0.8);
 }
 /* =================================
 

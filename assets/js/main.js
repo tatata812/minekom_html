@@ -49,17 +49,16 @@ $(function () {
 
 
 
-  $(".top-info-js").slick({
+  $(".top-news-js").slick({
     autoplay: false,
     dots: true,
     arrows: true,
-    slidesToShow: 4,
-    responsive: [{
-        breakpoint: 1400,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
           arrows: false,
-
         }
       },
       {
@@ -67,6 +66,7 @@ $(function () {
         settings: {
           slidesToShow: 2,
           arrows: false,
+
         }
       },
       {

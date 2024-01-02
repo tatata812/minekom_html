@@ -416,7 +416,12 @@ header
   &__ttl {
     position: relative;
     margin: 200px auto 152px;
-    
+
+    @include sp {
+      margin: 150px auto 152px;
+
+    }
+
 
     &:before {
       content: url(../img/top/top-works-ttl-bg.png);
@@ -437,14 +442,14 @@ header
     justify-content: center;
 
 
-    @include tab{
+    @include tab {
       padding: 60px 0 0;
 
     }
 
   }
 
-  &__ {}
+  &__btn {}
 
   &__ {}
 
@@ -486,15 +491,15 @@ header
   padding: 0 8px 12px;
   margin: 0 0 60px;
 
-  @include pc{
+  @include pc {
     width: calc((100% - 24px) / 2);
   }
 
-  @include tab{
-  width: 100%;
-  max-width: 420px;
+  @include tab {
+    width: 100%;
+    max-width: 420px;
   }
-  
+
   &__ttl-wrap {
     width: 88%;
     max-width: 300px;
@@ -506,10 +511,10 @@ header
     padding: 2px;
     background-color: #a3a3a3;
 
-    
+
     &--construction {
       background-color: #f7931e;
-      
+
     }
 
     &--civil {
@@ -532,7 +537,7 @@ header
     margin: -5px 0 0 0;
     min-height: 72px;
     background-color: #fff;
-    filter: drop-shadow(8px 6px 0px rgba(0,0,0,0.1));
+    filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.1));
 
     &::before {
       content: url(../img/top/top-works-square.png);
@@ -541,9 +546,10 @@ header
       left: -20px;
       transform: translateY(-50%);
       filter: none;
-      
+
 
     }
+
     &:after {
       content: url(../img/top/top-works-triangle.png);
       position: absolute;
@@ -560,16 +566,37 @@ header
   &__img01 {
     padding: 0 24px 0 0;
     margin: 0 0 16px;
+    width: 350px;
+
+    @media screen and (max-width: 380px) {
+      width: 280px;
+    }
+    img {
+      overflow: hidden;
+    }
   }
 
   &__img02 {
     padding: 0 0 0 24px;
     margin: 0 0 16px;
+    width: 350px;
+
+    @include sp{
+      margin-left: auto;
+    
+    }
+
+    @media screen and (max-width: 380px) {
+      width: 280px;
+    }
+    img {
+      overflow: hidden;
+    }
   }
 
   &__point {
     max-width: 180px;
-    margin: 0 0 4px;
+    margin: -50px 0 4px;
   }
 
   &__point-ttl {
@@ -595,6 +622,101 @@ header
   &__ {}
 
   &__ {}
+}
+
+
+/* =================================
+お知らせ
+ ================================= */
+
+.top-news {
+  overflow: hidden;
+
+  &__ttl {
+    position: relative;
+    margin: 240px auto 220px;
+    padding: 80px 0 0;
+
+    @include sp {
+      margin: 150px auto 152px;
+
+    }
+
+    &:before {
+      content: url(../img/top/top-news-ttl-bg.png);
+      z-index: -10;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  &__content {
+    max-width: 1080px;
+    margin: 0 auto 60px!important;
+
+
+    .slick-prev {
+      left: -37px;
+      top: 30%;
+    }
+
+    .slick-next {
+      right: -25px;
+      top: 30%;
+    }
+
+  }
+
+  &__item {
+    margin: 0 12px;
+  }
+
+
+  &__cat {
+    background-color: #a3a3a3;
+    color: #fff;
+    padding: 0 2px;
+    display: inline-block;
+    margin: 0 0 8px;
+  }
+
+  &__img {
+    margin: 0 0 8px;
+  }
+  
+  &__item-ttl {
+    font-weight: normal;
+    margin: 0 0 8px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  &__time {
+    font-size: 14px;
+    display: block;
+    color: #a3a3a3;
+    position: relative;
+
+    &:after {
+      content: url(../img/top/top-news-arrow.png);
+      position: absolute;
+      top: 0;
+      right: 16px;
+      transform: scale(0.8);
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+
 }
 
 /* =================================
