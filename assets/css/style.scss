@@ -80,15 +80,13 @@ header
 
   }
 
-  &__ttl {
-
-  }
+  &__ttl {}
 
   &__tel-wrap {
     background-color: #fff;
     margin: 0 12% 0 3%;
 
-    @include pc{
+    @include pc {
       margin: 0 2% 0 2%;
 
     }
@@ -216,11 +214,11 @@ header
   position: relative;
   padding: 0 0 160px;
 
-  @include pc{
+  @include pc {
     padding: 0 0 120px;
   }
 
-  @include tab{
+  @include tab {
     padding: 0 0 40px;
 
   }
@@ -240,44 +238,63 @@ header
 
   &__thumbnail {
     position: absolute;
-    bottom: 50px;
+    bottom: 17px;
     left: 30%;
     transform: translateX(-50%);
-  
+
 
     @include pc {
       bottom: 12px;
       left: 30%;
     }
 
-    @include tab{
-    display: none;
+    @include tab {
+      display: none;
+    }
+
+    .slick-track {
+      transform: unset !important;
     }
   }
 
 
   &__thumbnail-item {
     cursor: pointer;
-    width: 100px!important;
+    width: 100px !important;
     margin: 0 4px;
+    position: relative;
+    margin: 0 0 30px 6px;
 
 
+    &:before {
+      content: url(../img/top/thumbnail-dot.png);
+      position: absolute;
+      bottom: -30px;
+      right: 42px;
+    }
 
-    &.slick-current img{
+
+    &.slick-current {
+      &:before {
+        content: url(../img/top/thumbnail-dot-active.png);
+
+      }
+    }
+
+
+    &.slick-current img {
       opacity: 1;
       border: red solid 2px;
     }
 
 
-    @include tab {
-  
-    }
+    @include tab {}
 
 
   }
 
   &__thumbnail-img {
-    width: 100px!important;
+    width: 100px !important;
     opacity: 0.5;
     padding: 1px;
 
@@ -295,11 +312,11 @@ header
     right: 40%;
     transform: translateX(50%);
 
-    @include pc{
+    @include pc {
       right: 20%;
     }
 
-    @include tab{
+    @include tab {
       transform: translateX(0);
       right: 7%;
 
@@ -309,23 +326,366 @@ header
   &__img {
     width: 480px;
 
-    @include pc{
+    @include pc {
       width: 280px;
     }
 
-    @include tab{
+    @include tab {
       width: 180px;
 
     }
 
-    @include sp{
+    @include sp {
       width: 120px;
 
     }
   }
+}
+
+
+/* =================================
+いつもそばに安心がある暮らし
+ ================================= */
+.top-life {
+  padding: 80px 12px;
+
+  &__ttl {
+    margin: 0 auto 24px;
+  }
+}
+
+/* =================================
+地域とともに
+ ================================= */
+
+.top-community {
+
+  &__ttl {
+    margin: 0 auto 40px;
+  }
+
+  &__text {
+    max-width: 620px;
+    margin: 0 auto 20px;
+
+    &:last-of-type {
+      margin: 0 auto 60px;
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
 
 
 }
+
+/* =================================
+最新の施工事例
+ ================================= */
+
+.top-works {
+  overflow: hidden;
+
+  &__ttl {
+    position: relative;
+    margin: 200px auto 152px;
+    
+
+    &:before {
+      content: url(../img/top/top-works-ttl-bg.png);
+      z-index: -10;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  &__content {
+    padding: 100px 0 0;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    @include tab{
+      padding: 60px 0 0;
+
+    }
+
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+
+
+.top-works-item {
+  width: calc((100% - 48px) / 3);
+  border: #000 solid 3px;
+  border-radius: 10px;
+  padding: 0 8px 12px;
+  margin: 0 0 60px;
+
+  @include pc{
+    width: calc((100% - 24px) / 2);
+  }
+
+  @include tab{
+  width: 100%;
+  max-width: 420px;
+  }
+  
+  &__ttl-wrap {
+    width: 88%;
+    max-width: 300px;
+    margin: -60px auto 20px;
+  }
+
+  &__cat {
+    color: #fff;
+    padding: 2px;
+    background-color: #a3a3a3;
+
+    
+    &--construction {
+      background-color: #f7931e;
+      
+    }
+
+    &--civil {
+      background-color: #29abe2;
+
+    }
+
+    &--environmental {
+      background-color: #39b54a;
+
+    }
+  }
+
+  &__lead {
+    border: #dc0000 solid 2px;
+    position: relative;
+    padding: 4px 4px 4px 24px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: -5px 0 0 0;
+    min-height: 72px;
+    background-color: #fff;
+    filter: drop-shadow(8px 6px 0px rgba(0,0,0,0.1));
+
+    &::before {
+      content: url(../img/top/top-works-square.png);
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+      filter: none;
+      
+
+    }
+    &:after {
+      content: url(../img/top/top-works-triangle.png);
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+    }
+  }
+
+  &__ttl {
+    color: #4d4d4d;
+    margin: 0 0 8px 16px;
+  }
+
+  &__img01 {
+    padding: 0 24px 0 0;
+    margin: 0 0 16px;
+  }
+
+  &__img02 {
+    padding: 0 0 0 24px;
+    margin: 0 0 16px;
+  }
+
+  &__point {
+    max-width: 180px;
+    margin: 0 0 4px;
+  }
+
+  &__point-ttl {
+    border-top: #dc0000 dotted 3px;
+    border-bottom: #dc0000 dotted 3px;
+    padding: 2px 4px;
+    color: #dc0000;
+    font-size: 16px;
+    margin: 0 0 8px;
+
+
+  }
+
+  &__point-text {
+    padding: 0 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666666;
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
 
 .aaa {
 

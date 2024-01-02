@@ -35,9 +35,10 @@ $(function () {
 
   // メインビジュアル
   $(".main-visual-js").slick({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
     fade: true,
+    speed: 3000,
     asNavFor: ".main-thumbnail-js",
   });
   $(".main-thumbnail-js").slick({
