@@ -36,10 +36,18 @@ $(function () {
   // メインビジュアル
   $(".main-visual-js").slick({
     autoplay: true,
-    arrows: false,
+    arrows: true,
     fade: true,
     speed: 3000,
     asNavFor: ".main-thumbnail-js",
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          dots: true,
+        }
+      },
+    ],
   });
   $(".main-thumbnail-js").slick({
     slidesToShow: 4,
