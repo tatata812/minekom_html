@@ -40,14 +40,12 @@ $(function () {
     fade: true,
     speed: 3000,
     asNavFor: ".main-thumbnail-js",
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          dots: true,
-        }
-      },
-    ],
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        dots: true,
+      }
+    }, ],
   });
   $(".main-thumbnail-js").slick({
     slidesToShow: 4,
@@ -62,8 +60,7 @@ $(function () {
     dots: true,
     arrows: true,
     slidesToShow: 3,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           arrows: false,
@@ -73,6 +70,36 @@ $(function () {
         breakpoint: 800,
         settings: {
           slidesToShow: 2,
+          arrows: false,
+
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+      },
+    ],
+  });
+
+  $(".top-blog-js").slick({
+    autoplay: false,
+    dots: false,
+    arrows: true,
+    slidesToShow: 2,
+    responsive: [{
+        breakpoint: 1000,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
           arrows: false,
 
         }

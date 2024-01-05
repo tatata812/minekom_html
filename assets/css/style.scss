@@ -228,23 +228,23 @@ header
     z-index: 100;
 
 
-    @include sp{
-    &:before {
-      font-size: 20px;
-    }
+    @include sp {
+      &:before {
+        font-size: 20px;
+      }
     }
   }
 
   .slick-next {
     right: 35px;
 
-    @include sp{
+    @include sp {
       right: 12px;
 
       &:before {
         font-size: 20px;
       }
-      }
+    }
   }
 
   &__top {
@@ -459,7 +459,7 @@ header
   }
 
   &__content {
-    padding: 100px 0 0;
+    padding: 100px 12px 0;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
@@ -467,7 +467,7 @@ header
 
 
     @include tab {
-      padding: 60px 0 0;
+      padding: 60px 12px 0;
 
     }
 
@@ -563,6 +563,10 @@ header
     background-color: #fff;
     filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.1));
 
+    @include sp {
+      font-size: 16px;
+    }
+
     &::before {
       content: url(../img/top/top-works-square.png);
       position: absolute;
@@ -586,6 +590,10 @@ header
     color: #4d4d4d;
     margin: 0 0 8px 16px;
     font-size: 17px;
+
+    @include sp {
+      font-size: 16px;
+    }
   }
 
   &__img01 {
@@ -596,6 +604,7 @@ header
     @media screen and (max-width: 380px) {
       width: 280px;
     }
+
     img {
       overflow: hidden;
     }
@@ -606,14 +615,15 @@ header
     margin: 0 0 16px;
     width: 350px;
 
-    @include sp{
+    @include sp {
       margin-left: auto;
-    
+
     }
 
     @media screen and (max-width: 380px) {
       width: 280px;
     }
+
     img {
       overflow: hidden;
     }
@@ -656,6 +666,12 @@ header
 
 .top-news {
   overflow: hidden;
+  padding: 0 0 80px;
+
+  @include sp {
+    padding: 0 0 40px;
+
+  }
 
   &__ttl {
     position: relative;
@@ -680,7 +696,7 @@ header
 
   &__content {
     max-width: 1080px;
-    margin: 0 auto 60px!important;
+    margin: 0 auto 60px !important;
 
 
     .slick-prev {
@@ -711,7 +727,7 @@ header
   &__img {
     margin: 0 0 8px;
   }
-  
+
   &__item-ttl {
     font-weight: normal;
     margin: 0 0 8px;
@@ -745,10 +761,22 @@ header
 }
 
 /* =================================
-
+ブログ
  ================================= */
 
-.aaa {
+.top-blog {
+  background-image: url(../img/top/top-blog-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top;
+  padding: 120px 0 0;
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px
+  }
 
   &__ {}
 
@@ -766,24 +794,43 @@ header
 
   &__ {}
 
-  &__ {}
+  &__item {
+    margin: 0 12px;
+    width: 380px;
+  }
 
-  &__ {}
 
-  &__ {}
+  &__item-lead {
+    font-size: 14px;
+    color: #535353;
+    margin: 0 0 12px;
+  }
 
-  &__ {}
+  &__img {
+    margin: 0 0 12px;
+  }
 
-  &__ {}
+  &__item-ttl {
+    font-weight: normal;
+    margin: 0 0 8px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
 
-  &__ {}
+  &__time {
+    font-size: 14px;
+    display: block;
+    color: #a3a3a3;
+    position: relative;
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
+    &:after {
+      content: url(../img/top/top-news-arrow.png);
+      position: absolute;
+      top: 0;
+      right: 16px;
+      transform: scale(0.8);
+    }
+  }
 
 }
 
