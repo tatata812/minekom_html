@@ -84,35 +84,8 @@ $(function () {
     ],
   });
 
-  $(".top-blog-js").slick({
-    autoplay: false,
-    dots: false,
-    arrows: true,
-    slidesToShow: 2,
-    responsive: [{
-        breakpoint: 1000,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
 
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        }
-      },
-    ],
-  });
+
 
   // 客室詳細
   $slide = $('.room-main-js');

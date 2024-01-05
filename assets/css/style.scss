@@ -775,7 +775,26 @@ header
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 40px
+    gap: 60px;
+
+    @include pc{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__ttl-wrap {
+    width: 300px;
+
+    @include sp{
+      width: 100%;
+      max-width: 300px;
+      }
+  }
+
+  &__ttl {
+    margin: 0 0 16px;
+    display: block;
   }
 
   &__ {}
@@ -788,15 +807,23 @@ header
 
   &__ {}
 
-  &__ {}
+  &__content {
+    display: flex;
+    gap: 24px;
 
-  &__ {}
-
-  &__ {}
+    @include tab{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
   &__item {
-    margin: 0 12px;
     width: 380px;
+
+    @include sp{
+    width: 100%;
+    max-width: 380px;
+    }
   }
 
 

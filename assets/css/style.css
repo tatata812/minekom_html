@@ -1271,11 +1271,45 @@ header
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
+}
+@media (max-width: 1120px) {
+  .top-blog__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.top-blog__ttl-wrap {
+  width: 300px;
+}
+@media (max-width: 600px) {
+  .top-blog__ttl-wrap {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.top-blog__ttl {
+  margin: 0 0 16px;
+  display: block;
+}
+.top-blog__content {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 820px) {
+  .top-blog__content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .top-blog__item {
-  margin: 0 12px;
   width: 380px;
+}
+@media (max-width: 600px) {
+  .top-blog__item {
+    width: 100%;
+    max-width: 380px;
+  }
 }
 .top-blog__item-lead {
   font-size: 14px;
