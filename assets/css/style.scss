@@ -421,12 +421,11 @@ header
     position: relative;
     margin: 200px auto 152px;
 
-    @include sp {
-      margin: 150px auto 152px;
-
+    @include sp{
+    display: none;
     }
 
-
+  
     &:before {
       content: url(../img/top/top-works-ttl-bg.png);
       z-index: -10;
@@ -437,6 +436,14 @@ header
     }
 
   }
+
+&__ttl-sp {
+  display: none;
+
+  @include sp{
+  display: block;
+  }
+}
 
   &__content {
     padding: 100px 12px 0;
@@ -454,35 +461,6 @@ header
   }
 
   &__btn {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
 
 }
 
@@ -658,10 +636,10 @@ header
     margin: 240px auto 220px;
     padding: 80px 0 0;
 
-    @include sp {
-      margin: 150px auto 152px;
-
-    }
+    @include sp{
+      display: none;
+      }
+  
 
     &:before {
       content: url(../img/top/top-news-ttl-bg.png);
@@ -670,6 +648,15 @@ header
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+  }
+
+  &__ttl-sp {
+    display: none;
+
+    @include sp{
+    display: block;
+    margin: 40px 0;
     }
   }
 
@@ -852,9 +839,13 @@ header
   background-size: cover;
   background-position: center top;
   max-width: 1360px;
+  padding: 0 0 44px;
 
   @include tab{
+    background-color: #7f839a;
+background-blend-mode:multiply;
     background-image: url(../img/top/top-recruit-bg-sp.jpg);
+    padding: 0 ;
 
   }
 
