@@ -108,6 +108,7 @@ li {
   transform: translateY(-50%) translateX(-50%);
   color: #fff;
   font-size: clamp(1.25rem, 0.62rem + 3.15vw, 3.375rem);
+  white-space: nowrap;
   letter-spacing: 0.5rem;
 }
 .main-top__breadcrumb-wrap {
