@@ -99,7 +99,7 @@
   background-color: #f2f2f2;
   padding: 60px 12px;
 
-  @include sp{
+  @include sp {
     padding: 32px 12px;
 
   }
@@ -110,7 +110,7 @@
     font-size: clamp(1rem, 0.926rem + 0.37vw, 1.25rem);
     font-weight: 500;
 
-    @include sp{
+    @include sp {
       margin: 0 auto 24px;
 
     }
@@ -123,7 +123,7 @@
     padding: 40px;
     border-radius: 34px;
 
-    @include sp{
+    @include sp {
       padding: 24px;
 
     }
@@ -146,14 +146,14 @@
       font-weight: 500;
       width: 160px;
 
-      @include tab{
+      @include tab {
         padding: 4px 0 4px 2px;
         width: 90px;
       }
 
-      @include sp{
+      @include sp {
         font-size: 13px;
-        }
+      }
     }
 
     td {
@@ -161,8 +161,8 @@
       text-align: left;
       vertical-align: middle;
 
-      @include sp{
-      font-size: 13px;
+      @include sp {
+        font-size: 13px;
       }
     }
 
@@ -175,56 +175,21 @@
 
 }
 
-.page-company {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-}
 
 
 
 
 /* =================================
-
+施工事例
  ================================= */
 
-.aaa {
+.page-works {
 
-  &__ {}
+  &__pager {
+    text-align: center;
+    height: 100px;
+  }
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 
   &__ {}
 
@@ -233,10 +198,145 @@
 
 }
 
+.works-menu {
+  padding: 0 12px;
+
+  &__ttl {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    position: relative;
+    padding: 0 8px 2px;
+    border-bottom: 2px solid #b3b3b3;
+    text-align: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -2px;
+      width: 80px;
+      height: inherit;
+      border-bottom: 2px solid #dc0000;
+    }
+  }
+
+  &__cat-wrap {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 0 40px;
+    flex-wrap: wrap;
+
+
+  }
+
+  &__cat {
+    border: solid 1px #0b5394;
+    text-align: center;
+    width: 120px;
+
+    &--construction {
+      border: solid 1px #f7931e;
+    }
+
+    &--civil {
+      border: solid 1px #29abe2;
+    }
+
+    &--environmental {
+      border: solid 1px #39b54a;
+    }
+  }
+
+  &__key-wrap {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto 80px;
+
+    @include sp{
+      margin: 0 auto 40px;
+
+    }
+  }
+
+  &__key {
+    border: solid 1px #9b9b9b;
+    text-align: center;
+    width: 120px;
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+}
+
 
 /* =================================
 
  ================================= */
+
+.page-works {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+.page-works {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+.page-works {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
 
 .aaa {
 

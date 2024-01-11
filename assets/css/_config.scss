@@ -122,16 +122,19 @@ li {
     background-size: auto;
     background-position: center top;
     position: relative;
+    padding: 120px 0 80px;
 
+    @include tab {
+      padding: 60px 0 20px;
+    }
 
 
     &--company {
       background-image: url(../img/subpage/main-top-company.jpg);
-      padding: 120px 0 80px;
+    }
 
-      @include tab {
-        padding: 60px 0 20px;
-      }
+    &--works {
+      background-image: url(../img/subpage/main-top-works.jpg);
     }
 
   }
