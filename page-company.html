@@ -1,0 +1,243 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>会社案内</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <a href="#" class="header__tel-wrap header__item"><img src="assets/img/top/header-tel.png"
+          class="header__tel"></a>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu01.png" class="header__menu-img"></a>
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu02.png" class="header__menu-img"></a>
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu03.png" class="header__menu-img"></a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <img src="assets/img/top/header-btn.png" class="header__btn">
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-company">
+
+    <section class="main-top">
+      <div class="main-top__ttl-wrap main-top__ttl-wrap--company">
+        <h1 class="main-top__ttl">会社案内</h1>
+      </div>
+      <div class="main-top__breadcrumb-wrap">
+        <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+          HOME ＞ ○○○○○
+        </div>
+      </div>
+    </section>
+
+    <section class="page-company__section01 company-section01">
+
+      <div class="company-section01__lead">
+        『人と人とのご縁』<br>
+        必要とされる存在であり続ける為に
+      </div>
+      <div class="company-section01__content">
+        <div class="company-section01__img pc-block">
+          <img src="assets/img/subpage/company-section01-img.jpg" alt="">
+        </div>
+        <div class="company-section01__img sp-block">
+          <img src="assets/img/subpage/company-section01-img-sp.jpg" alt="">
+        </div>
+        <div class="company-section01__text-wrap">
+          <p class="company-section01__text">
+            弊社は山口県宇部市にて、その主要産業が石炭から化学製品に転換を始めた時期である1930年(昭和5年)に、工業製品の請負作業、機械メンテナンスを生業とする大谷組(個人経営)を初代社長・大谷善治が開業したのが始まりです。以降、建設業へと進出し1960年(昭和35年)に有限会社・大谷建設工業所、1967年(昭和42年)に大谷建設株式会社へと法人組織化してまいりました。
+          </p>
+          <p class="company-section01__text">
+            また1970年(昭和45年)、二代目社長・大谷将治は、ハウジングのブームが到来すると予測し、住宅・不動産業を営む大谷地所株式会社を設立、地域の住環境およびそれに付帯するサービスの 提供を開始いたしました。</p>
+          <p class="company-section01__text">
+            平成の世となり、全国的に「高齢化」「介護」というキーワードが、新聞紙面に度々表記されるようになりました。そこでバリアフリー工事監修、介護用品の販売・レンタル業を行う株式会社はんどを1999年(平成11年)に設立、現在山口県西部、北九州市へと活動範囲を広げております。
+          </p>
+          <p class="company-section01__text">
+            そして2011年(平成23年)、類似業務の統合・効率化と「建設業×不動産業」による新たな付加価値創出を期して、大谷建設株式会社と大谷地所株式会社を合併し、株式会社オータニが誕生しまし た。</p>
+          <p class="company-section01__text">
+            当グループが、創業以来大切にしているのは「人と人とのご縁」。お客様やお取引先、地域とのご縁なくしては、私たちの仕事は成り立ちません。また、どんなにいい商品やサービスを提供していても、それらが時流に合ったものでなくては企業として生き長らえることはできません。
+          </p>
+          <p class="company-section01__text">
+            私たちは、人口減少(特に地方)、少子高齢化によって、国全体の力が縮小・弱体化していくおそれのある将来においても、必要とされる商品・サービスを提供し、また必要とされる存在であり続けます。<br>
+            私たちオータニグループの取り組みに、どうぞこれからもご期待ください。</p>
+          <p class="company-section01__text company-section01__text--right">株式会社オータニ／株式会社はんど／株式会社美祢工務店<br>
+            代表取締役<span class="company-section01__text-span">大谷 英治</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-company__section02 company-section02">
+
+        <h2 class="company-section02__ttl sub-page-ttl">
+          会社概要
+        </h2>
+        <div class="company-section02__content">
+          <table class="company-section02__table">
+              <tr>
+                <th>会社</th>
+                <td>株式会社 美祢工務店</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>山口県美祢市伊佐町伊佐3942番地12</td>
+              </tr>
+              <tr>
+                <th>連絡先</th>
+                <td>tel 0837-52-0097<br>
+                  fax 0837-52-0098</td>
+              </tr>
+              <tr>
+                <th>設立年月日</th>
+                <td>昭和35年1月</td>
+              </tr>
+              <tr>
+                <th>資本金</th>
+                <td>6000万円</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>大谷 英治</td>
+              </tr>
+              <tr>
+                <th>売上収益</th>
+                <td>569,143(単位:千円)</td>
+              </tr>
+              <tr>
+                <th>従業員数</th>
+                <td>技術部  6名<br>
+                  営  業  2名<br>
+                  清  掃  1名<br>
+                  経  理  1名</td>
+              </tr>
+              <tr>
+                <th>グループ会社</th>
+                <td>株式会社オータニ・株式会社はんど</td>
+              </tr>
+              <tr>
+                <th>取引銀行</th>
+                <td>山口銀行</td>
+              </tr>
+              <tr>
+                <th>取引企業名</th>
+                <td>山口県・美祢市 <br>
+                  UBE三菱セメント伊佐セメント工場<br>
+                  宇部マテリアルズ<br>
+                  NGKエレクトロデバイス株式会社<br>
+                  民間個人顧客</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>土木工事・建築工事・給排水設備工事・解体工事</td>
+              </tr>
+          </table>
+        </div>
+
+
+    </section>
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="fotter">
+    <div class="footer__btn-wrap">
+      <a href="#" class="footer__btn"><img src="assets/img/top/footer-btn.png" alt="問い合わせする"></a>
+    </div>
+
+    <div class="footer__main footer-content">
+      <nav class="footer-content__nav">
+        <a href="#" class="footer-content__nav-item">会社案内</a>
+        <a href="#" class="footer-content__nav-item">施行事例</a>
+        <a href="#" class="footer-content__nav-item">採用情報</a>
+        <a href="#" class="footer-content__nav-item">お問合せ</a>
+        <a href="#" class="footer-content__nav-item">このサイトについて</a>
+        <a href="#" class="footer-content__nav-item">プライバシーポリシー</a>
+        <a href="#" class="footer-content__nav-item">サイトマップ</a>
+      </nav>
+      <div class="footer-content__ttl-wrap">
+        <div class="footer-content__logo">
+          <img src="assets/img/top/footer-logo.png" alt="株式会社美祢工務店">
+        </div>
+        <a href="tel:0837520097" class="footer-content__tel">
+          <img src="assets/img/top/footer-tel.png">
+        </a>
+        <a href="#" class="footer-content__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      ©2023 美祢工務店. All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

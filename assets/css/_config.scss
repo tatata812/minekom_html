@@ -82,24 +82,19 @@ li {
 .main {
   padding: 88px 0 0;
 
-
-
   @include tab {
     padding: 60px 0 0 0;
   }
 
-
-
   &__section-inner {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 12px;
-
-    @include sp {
-      padding: 40px 20px;
-    }
+    padding: 0 12px;
   }
+
 }
+
+// トップページ共通
 
 .top-style {
 
@@ -107,7 +102,6 @@ li {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 12px;
-
   }
 
 
@@ -115,11 +109,69 @@ li {
     max-width: 480px;
     margin: 0 auto;
   }
+}
 
-  &__ {}
+// 下層ページ共通
 
-  &__ {}
+.main-top {
 
+  &__ttl-wrap {
+    max-width: 1360px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    position: relative;
+
+
+
+    &--company {
+      background-image: url(../img/subpage/main-top-company.jpg);
+      padding: 120px 0 80px;
+
+      @include tab {
+        padding: 60px 0 20px;
+      }
+    }
+
+  }
+
+  &__ttl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: clamp(1.25rem, 0.62rem + 3.15vw, 3.375rem);
+    letter-spacing: 0.5rem;
+  }
+
+  &__breadcrumb-wrap {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 2px 12px;
+    font-size: 13px;
+    color: #545454;
+  }
+
+}
+
+// 下層タイトル
+
+.sub-page-ttl {
+  position: relative;
+  padding: 0 8px 2px;
+  border-bottom: 2px solid #b3b3b3;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 80px;
+    height: inherit;
+    border-bottom: 2px solid #dc0000;
+  }
 }
 
 // ボタン
@@ -194,8 +246,6 @@ li {
   color: transparent;
 
 }
-
-
 
 
 .slick-dots li.slick-active button:before {
