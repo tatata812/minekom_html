@@ -384,12 +384,13 @@ li {
   }
 }
 /* =================================
-施工事例
+施工事例一覧
  ================================= */
 .page-works__pager {
   text-align: center;
   height: 100px;
 }
+
 .works-menu {
   padding: 0 12px;
 }
@@ -451,8 +452,75 @@ li {
   width: 120px;
 }
 /* =================================
-
+施行事例詳細
  ================================= */
+.single-works__ttl {
+  font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+  background-color: #0b5394;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  padding: 12px;
+  margin: 12px 0 0;
+  max-width: 1360px;
+  margin: 12px auto 0;
+}
+.single-works__breadcrumb-wrap {
+  max-width: 1360px;
+  margin: 0 auto 60px;
+  padding: 2px 12px;
+  font-size: 13px;
+  color: #545454;
+}
+.works-section01__ttl-wrap {
+  display: inline-block;
+  margin: 0 0 40px;
+}
+.works-section01__lead {
+  border: #dc0000 solid 2px;
+  position: relative;
+  padding: 4px 24px 4px 32px;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 0 0 0;
+  min-height: 72px;
+  background-color: #fff;
+  filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.1));
+}
+@media (max-width: 600px) {
+  .works-section01__lead {
+    font-size: 16px;
+  }
+}
+.works-section01__lead::before {
+  content: url(../img/top/top-works-square.png);
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  filter: none;
+}
+.works-section01__lead:after {
+  content: url(../img/top/top-works-triangle.png);
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+}
+@media (max-width: 600px) {
+  .works-section01__lead:after {
+    bottom: -26px;
+  }
+}
+.works-section01__ttl {
+  color: #4d4d4d;
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+@media (max-width: 600px) {
+  .works-section01__ttl {
+    font-size: 16px;
+  }
+}
 /* =================================
 
  ================================= */

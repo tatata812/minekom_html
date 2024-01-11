@@ -180,7 +180,7 @@
 
 
 /* =================================
-施工事例
+施工事例一覧
  ================================= */
 
 .page-works {
@@ -189,13 +189,6 @@
     text-align: center;
     height: 100px;
   }
-
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 .works-menu {
@@ -277,27 +270,36 @@
 
   &__ {}
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 }
 
 
 /* =================================
-
+施行事例詳細
  ================================= */
 
-.page-works {
+.single-works {
 
-  &__ {}
+  &__ttl {
+    font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+    background-color: #0b5394;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    padding: 12px;
+    margin: 12px 0 0 ;
+    max-width: 1360px;
+    margin: 12px auto 0;
+  }
 
-  &__ {}
+  &__breadcrumb-wrap {
+    max-width: 1360px;
+    margin: 0 auto 60px;
+    padding: 2px 12px;
+    font-size: 13px;
+    color: #545454;
+  }
+
+
 
   &__ {}
 
@@ -308,7 +310,60 @@
 
 }
 
-.page-works {
+.works-section01 {
+
+  &__ttl-wrap {
+  display: inline-block;
+  margin: 0 0 40px;
+  }
+
+
+  &__lead {
+    border: #dc0000 solid 2px;
+    position: relative;
+    padding: 4px 24px 4px 32px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 0 0;
+    min-height: 72px;
+    background-color: #fff;
+    filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.1));
+
+    @include sp {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: url(../img/top/top-works-square.png);
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+      filter: none;
+    }
+
+    &:after {
+      content: url(../img/top/top-works-triangle.png);
+      position: absolute;
+      bottom: -29px;
+      left: 0;
+
+      @include sp{
+        bottom: -26px;
+
+      }
+    }
+  }
+
+  &__ttl {
+    color: #4d4d4d;
+    margin: 0 0 8px;
+    font-size: 17px;
+
+    @include sp {
+      font-size: 16px;
+    }
+  }
 
   &__ {}
 
