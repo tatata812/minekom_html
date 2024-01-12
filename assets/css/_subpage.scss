@@ -250,7 +250,7 @@
     max-width: 800px;
     margin: 0 auto 80px;
 
-    @include sp{
+    @include sp {
       margin: 0 auto 40px;
 
     }
@@ -286,7 +286,7 @@
     color: #fff;
     letter-spacing: 0.5rem;
     padding: 12px;
-    margin: 12px 0 0 ;
+    margin: 12px 0 0;
     max-width: 1360px;
     margin: 12px auto 0;
   }
@@ -313,8 +313,8 @@
 .works-section01 {
 
   &__ttl-wrap {
-  display: inline-block;
-  margin: 0 0 40px;
+    display: inline-block;
+    margin: 0 0 40px;
   }
 
 
@@ -348,7 +348,7 @@
       bottom: -29px;
       left: 0;
 
-      @include sp{
+      @include sp {
         bottom: -26px;
 
       }
@@ -378,17 +378,117 @@
 
 }
 
-.page-works {
+.works-slider {
+
+  &__top-wrap {
+    display: flex;
+    gap: 16px;
+    margin: 0 0 24px;
+  }
+
+  &__top-sub {}
+
+  &__top-sub-img {
+    width: 230px;
+    margin: 0 0 16px;
+    cursor: pointer;
+
+
+    @include pc {
+      width: 160px;
+    }
+
+    &.current {
+      border: 2px solid red;
+      transition: border .5s;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    position: relative;
+  }
+
+  &__cat {
+    color: #fff;
+    padding: 0 6px;
+    background-color: #a3a3a3;
+    position: absolute;
+    right: 0;
+    top: -29px;
+
+
+    &--construction {
+      background-color: #f7931e;
+    }
+
+    &--civil {
+      background-color: #29abe2;
+    }
+
+    &--environmental {
+      background-color: #39b54a;
+    }
+  }
+
+  &__bottom-wrap {
+    display: flex;
+    gap: 12px;
+    max-width: 929px;
+    margin-left: auto;
+    flex-wrap: wrap;
+
+    @include pc{
+    margin: 0 auto;
+    max-width: 860px;
+    }
+
+    @include tab{
+      justify-content: center;
+    }
+
+    @include tab{
+      gap: 6px;
+    }
+  }
+
+  &__bottom-sub-img {
+    width: 220px;
+    cursor: pointer;
+
+    @include pc {
+      width: 160px;
+    }
+
+    @include sp{
+    width: calc((100% - 18px) / 4);;
+    }
+
+    &.current {
+      border: 2px solid red;
+      transition: border .5s;
+    }
+  }
+
+  &__bottom-bg {
+    position: relative;
+
+&:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: #f8f8f8;
+top: 50%;
+transform: translateY(-50%);
+z-index: -10;
+}
+
+  }
 
   &__ {}
 
-  &__ {}
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 
 
 }
