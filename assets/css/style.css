@@ -531,6 +531,9 @@ li {
   margin: 0 0 16px;
   cursor: pointer;
 }
+.works-slider__top-sub-img:hover {
+  opacity: 0.7;
+}
 @media (max-width: 1120px) {
   .works-slider__top-sub-img {
     width: 160px;
@@ -587,6 +590,9 @@ li {
 .works-slider__bottom-sub-img {
   width: 220px;
   cursor: pointer;
+}
+.works-slider__bottom-sub-img:hover {
+  opacity: 0.7;
 }
 @media (max-width: 1120px) {
   .works-slider__bottom-sub-img {
