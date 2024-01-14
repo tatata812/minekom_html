@@ -1,0 +1,180 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>お問合せ</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+            src="assets/img/top/logo.png" alt=""></a>
+      </h1>
+      <a href="#" class="header__tel-wrap header__item"><img src="assets/img/top/header-tel.png"
+          class="header__tel"></a>
+      <nav class="header__menu-wrap header__item">
+        <div class="header__menu-inner">
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu01.png" class="header__menu-img"></a>
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu02.png" class="header__menu-img"></a>
+          <a href="#" class="header__menu"><img src="assets/img/top/header-menu03.png" class="header__menu-img"></a>
+        </div>
+      </nav>
+      <div class="header__btn-wrap header__item">
+        <img src="assets/img/top/header-btn.png" class="header__btn">
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <ul class="header-sp__nav-list">
+          <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+          <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-contact">
+
+    <section class="main-top">
+      <div class="main-top__ttl-wrap main-top__ttl-wrap--works">
+        <h1 class="main-top__ttl">お問合せ</h1>
+      </div>
+      <div class="main-top__breadcrumb-wrap">
+        <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+          HOME ＞ ○○○○○
+        </div>
+      </div>
+    </section>
+
+    <section class="page-contact__section01 contact-section01">
+      <h2 class="contact-section01__ttl sub-page-ttl">
+        お電話でのお問合せ
+      </h2>
+      <div class="contact-section01__content">
+        <p class="contact-section01__text">電話でのお問合せは</p>
+        <p class="contact-section01__text02">
+          TEL : <a href="tel:0837-52-0097">0837-52-0097</a><br>
+          FAX : 0837-52-0098
+        </p>
+      </div>
+    </section>
+
+    <section class="page-contact__section02 contact-section02">
+      <h2 class="contact-section02__ttl sub-page-ttl">
+        お問合せフォーム
+      </h2>
+      <div class="contact-section02__content">
+        <table class="contact-section02__table">
+          <tr>
+            <th>お名前 <span class="contact-section02__table-span">必須</span></th>
+            <td><input type="text" name="NAME"></td>
+          </tr>
+          <tr>
+            <th>ふりがな<span class="contact-section02__table-span">必須</span></th>
+            <td><input type="text" name="NAME"></td>
+          </tr>
+          <tr>
+            <th>メールアドレス<span class="contact-section02__table-span">必須</span></th>
+            <td><input type="text" name="NAME"></td>
+          </tr>
+          <tr>
+            <th>電話番号<span class="contact-section02__table-span">必須</span></th>
+            <td><input type="text" name="NAME"></td>
+          </tr>
+          <tr>
+            <th>お問合せ内容<span class="contact-section02__table-span">必須</span></th>
+            <td><textarea id="story" name="story" rows="8"></textarea></td>
+          </tr>
+        </table>
+        <button type="button">送信</button>
+      </div>
+    </section>
+  </div>
+  <!--main end-->
+
+
+  <footer class="fotter">
+    <div class="footer__btn-wrap footer__btn-wrap--contact">
+      <a href="#" class="footer__btn"><img src="assets/img/top/footer-btn.png" alt="問い合わせする"></a>
+    </div>
+
+    <div class="footer__main footer-content">
+      <nav class="footer-content__nav">
+        <a href="#" class="footer-content__nav-item">会社案内</a>
+        <a href="#" class="footer-content__nav-item">施行事例</a>
+        <a href="#" class="footer-content__nav-item">採用情報</a>
+        <a href="#" class="footer-content__nav-item">お問合せ</a>
+        <a href="#" class="footer-content__nav-item">このサイトについて</a>
+        <a href="#" class="footer-content__nav-item">プライバシーポリシー</a>
+        <a href="#" class="footer-content__nav-item">サイトマップ</a>
+      </nav>
+      <div class="footer-content__ttl-wrap">
+        <div class="footer-content__logo">
+          <img src="assets/img/top/footer-logo.png" alt="株式会社美祢工務店">
+        </div>
+        <a href="tel:0837520097" class="footer-content__tel">
+          <img src="assets/img/top/footer-tel.png">
+        </a>
+        <a href="#" class="footer-content__top-btn top-to-js">
+          <img src="assets/img/top/top-btn.png">
+        </a>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      ©2023 美祢工務店. All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>

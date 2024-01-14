@@ -313,7 +313,7 @@
 .works-section01 {
   padding: 0 12px 120px;
 
-  @include sp{
+  @include sp {
     padding: 0 12px 60px;
 
   }
@@ -511,7 +511,7 @@
 .works-section02 {
   padding: 0 12px 120px;
 
-  @include tab{
+  @include tab {
     padding: 0 12px 0;
 
   }
@@ -523,30 +523,30 @@
     padding: 24px 0;
     align-items: center;
 
-    @include tab{
+    @include tab {
       flex-direction: column;
     }
-  
+
   }
 
   &__img {
     flex: 1;
 
-    @include tab{
+    @include tab {
       width: 100%;
       max-width: 540px;
-      }
+    }
   }
 
   &__text-wrap {
     width: 580px;
 
-    @include pc{
+    @include pc {
       width: 50%;
     }
 
-    @include tab{
-    width: 100%;
+    @include tab {
+      width: 100%;
     }
   }
 
@@ -558,8 +558,8 @@
   &__ttl {
     margin: 0 0 24px 28px;
 
-    @include tab{
-      margin: 0 8px 24px ;
+    @include tab {
+      margin: 0 8px 24px;
 
     }
   }
@@ -567,7 +567,7 @@
   &__text {
     margin: 0 0 0 28px;
 
-    @include tab{
+    @include tab {
       margin: 0 8px;
 
     }
@@ -584,49 +584,398 @@
 }
 
 
- .works-section03 {
-background-color: #f8f8f8;
-padding: 80px 12px;
-max-width: 1360px;
-    margin: 12px auto 80px;
+.works-section03 {
+  background-color: #f8f8f8;
+  padding: 80px 12px;
+  max-width: 1360px;
+  margin: 12px auto 80px;
 
-@include tab{
-  padding: 40px 12px;
+  @include tab {
+    padding: 40px 12px;
 
-}
+  }
 
   &__table {
-background-color: #fff;
-border: 1px solid #0b5394;
-border-collapse: collapse;
-width: 720px;
-margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #0b5394;
+    border-collapse: collapse;
+    width: 720px;
+    margin: 0 auto;
 
-@include tab{
-width: 100%;
+    @include tab {
+      width: 100%;
+    }
+
+    th {
+      border: 1px solid #0b5394;
+      border-collapse: collapse;
+      font-weight: 300;
+      width: 120px;
+      padding: 8px;
+    }
+
+
+    td {
+      border: 1px solid #0b5394;
+      border-collapse: collapse;
+      font-weight: 300;
+      padding: 8px;
+    }
+  }
+
+
+
 }
 
-th {
-  border: 1px solid #0b5394;
-  border-collapse: collapse;
-  font-weight: 300;
-  width: 120px;
-  padding: 8px;
+/* =================================
+お問合せ
+ ================================= */
+
+.page-contact {
+
+  &__section01 {
+    max-width: 780px;
+    margin: 40px auto 80px;
+    padding: 0 12px;
+
+    @include sp{
+      margin: 40px auto;
+
+    }
+
+  }
+
+  &__section02 {
+    max-width: 780px;
+    margin: 0 auto 80px;
+    padding: 0 12px;
+
+    @include sp{
+      margin: 0 auto 40px;
+
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+}
+
+.contact-section01 {
+
+  &__ttl {
+    margin: 0 0 24px;
+  }
+
+
+  &__text {
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+
+  &__text02 {
+    font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+    font-weight: bold;
+    line-height: 1.2;
+
+    a {
+      font-size: inherit;
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+}
+
+.contact-section02 {
+
+  &__ttl {
+    margin: 0 0 40px;
+  }
+
+  &__table {
+    width: 94%;
+    font-size: 15px;
+    margin: 0 24px 40px;
+
+    @include tab {
+      width: 98%;
+      margin: 0 auto 40px;
+
+    }
+
+    tr {
+      border-bottom: #1a7fbb dotted 1px;
+
+      &:first-of-type {
+        border-top: #1a7fbb dotted 1px;
+
+      }
+
+
+    }
+
+
+    th {
+      color: #1a7fbb;
+      text-align: left;
+      vertical-align: middle;
+      padding: 8px 20px 8px 28px;
+      font-weight: 500;
+      width: 200px;
+
+      @include tab {
+        padding: 12px 0 4px 2px;
+        display: block;
+        width: 200px;
+        width: 100%;
+      }
+
+      @include sp {
+        font-size: 13px;
+      }
+    }
+
+    td {
+      color: #080808;
+      text-align: left;
+      vertical-align: middle;
+      padding: 8px 20px 8px 28px;
+
+      @include tab {
+        display: block;
+        padding: 8px;
+
+      }
+
+
+      @include sp {
+        font-size: 13px;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 20px;
+
+      @include sp{
+      font-size: 14px;
+      }
+    }
+  }
+
+  &__table-span {
+    color: #fff;
+    background-color: #dc0000;
+    padding: 0 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: auto;
+    display: inline-block;
+    float: right;
+
+    @include tab{
+    margin: 0 12px 0;
+    }
+  }
+
+  button {
+    display: block;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    background-color: #29abe2;
+    color: #f2f2f2;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
 }
 
 
-td{
-  border: 1px solid #0b5394;
-  border-collapse: collapse;
-  font-weight: 300;
-  padding: 8px;
+
+
+/* =================================
+記事一覧
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
 
 
 }
 
+/* =================================
+記事詳細
+ ================================= */
+
+.single {
 
 
+  &__ttl {
+    font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+    background-color: #0b5394;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    padding: 12px;
+    margin: 12px 0 0;
+    max-width: 1360px;
+    margin: 12px auto 0;
+  }
 
+  &__breadcrumb-wrap {
+    max-width: 1360px;
+    margin: 0 auto 60px;
+    padding: 2px 12px;
+    font-size: 13px;
+    color: #545454;
+  }
+
+  &__section01 {
+    max-width: 1020px;
+    margin: 40px auto;
+    padding: 0 12px;
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+}
+
+.single-section01 {
+
+  padding: 0 12px 120px;
+
+  @include sp {
+    padding: 0 12px 60px;
+  }
+
+  &__ttl-wrap {
+    display: inline-block;
+    margin: 0 0 40px 20px;
+  }
+
+
+  &__lead {
+    border: #dc0000 solid 2px;
+    position: relative;
+    padding: 4px 24px 4px 32px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 0 0;
+    min-height: 72px;
+    background-color: #fff;
+    filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.1));
+
+    @include sp {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: url(../img/top/top-works-square.png);
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      transform: translateY(-50%);
+      filter: none;
+    }
+
+    &:after {
+      content: url(../img/top/top-works-triangle.png);
+      position: absolute;
+      bottom: -29px;
+      left: 0;
+
+      @include sp {
+        bottom: -26px;
+
+      }
+    }
+  }
+
+  &__date {
+    color: #4d4d4d;
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 500;
+
+    @include sp {
+      font-size: 15px;
+    }
+  }
+
+  &__content {
+    margin: 24px 0 0;
   }
 
   &__ {}
@@ -650,165 +999,39 @@ td{
   &__ {}
 
   &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
 /* =================================
-
+固定ページ
  ================================= */
 
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-/* =================================
-
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-/* =================================
-
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
-
-/* =================================
-
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
+.page {
+
+  &__ttl {
+    font-size: clamp(1.25rem, 0.977rem + 1.36vw, 2rem);
+    background-color: #0b5394;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.5rem;
+    padding: 12px;
+    margin: 12px 0 0;
+    max-width: 1360px;
+    margin: 12px auto 0;
+  }
+
+  &__breadcrumb-wrap {
+    max-width: 1360px;
+    margin: 0 auto 60px;
+    padding: 2px 12px;
+    font-size: 13px;
+    color: #545454;
+  }
+
+  &__content {
+    max-width: 1020px;
+    margin: 40px auto;
+    padding: 0 12px;
+  }
   &__ {}
 
   &__ {}

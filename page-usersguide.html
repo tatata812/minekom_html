@@ -1,0 +1,271 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+  <!DOCTYPE html>
+  <html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="email=no,telephone=no,address=no">
+    <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+    <title>このサイトについて</title>
+    <meta name="description" content="<?php echo $des; ?>">
+    <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+    <meta name="robots" content="none">
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+      content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+    <meta property="og:description" content="<?php echo $des; ?>">
+    <meta property="og:site_name"
+      content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fb.jpg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+      content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+    <meta name="twitter:description" content="<?php echo $des; ?>">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+    <link rel="stylesheet" href="assets/css/style.css?20230220">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  
+  <body class="wrap">
+  
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__ttl-wrap header__item"><a href="index.html" class="header__ttl"><img
+              src="assets/img/top/logo.png" alt=""></a>
+        </h1>
+        <a href="#" class="header__tel-wrap header__item"><img src="assets/img/top/header-tel.png"
+            class="header__tel"></a>
+        <nav class="header__menu-wrap header__item">
+          <div class="header__menu-inner">
+            <a href="#" class="header__menu"><img src="assets/img/top/header-menu01.png" class="header__menu-img"></a>
+            <a href="#" class="header__menu"><img src="assets/img/top/header-menu02.png" class="header__menu-img"></a>
+            <a href="#" class="header__menu"><img src="assets/img/top/header-menu03.png" class="header__menu-img"></a>
+          </div>
+        </nav>
+        <div class="header__btn-wrap header__item">
+          <img src="assets/img/top/header-btn.png" class="header__btn">
+        </div>
+      </div>
+  
+      <div class="header-sp">
+        <div class="header-sp__inner">
+          <ul class="header-sp__nav-list">
+            <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+    <div class="main page">
+  
+      <h1 class="page__ttl">このサイトについて</h1>
+      <div class="page__breadcrumb-wrap">
+        <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+          HOME ＞ ○○○○○
+        </div>
+      </div>
+  
+  
+      <div class="page__content page-style">
+          <div class="page-style__block">
+            <p>
+              株式会社美祢工務店のホームページ (以下「本ホームページ」といいます) は株式会社美祢工務店（以下，「当社」といいます。）が運営しています。<br>
+              本ホームページのご利用に際しては、以下のご利用条件をお読みいただき、これらの条件にご同意の上ご利用ください。<br>
+              ※なお、サイトポリシーおよび関連する規定類は、予告なく内容を変更させていただく場合がございますので、あらかじめご了承ください。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>免責事項</h2>
+            <p>
+              当社は、本ホームページに記載された情報の完全性・正確性に対して一切の保証を与えるものではありません。当社は予告なしに、本ホームページ掲載されている情報を変更することがあります。
+            </p>
+            <p>
+              当社およびその関連会社は、本ホームページに含まれる情報もしくは内容を利用することで直接・間接的に生じた損失に関し一切責任を負わないものとします。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>著作権</h2>
+            <p>
+              本ホームページに掲載されている文章、イラスト、ロゴ、写真、動画、ソフトウェア、その他のすべての情報は、当社又は第三者が著作権を有しております。
+            </p>
+            <p>
+              個人的な利用など著作権法によって認められる場合を除き、著作権者の事前の許可なく、これらの情報を利用 (複製、改変、配布、公衆送信等を含みます。) することはできません。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>リンク</h2>
+            <p>本ホームページへのリンクをご希望の方は、下記の注意事項をよくお読みください。</p>
+            <h3>リンク先設定について</h3>
+            <p>リンク先として設定するURLは、原則として本ホームページのトップページ (下記) とさせていただきます。これ以外の下層のページに直接リンクを張ることはお断りします。</p>
+            <ol>
+              <li>http://www.hokumon.co.jp/ (株式会社美祢工務店)</li>
+            </ol>
+            <p>
+              当社が保有するロゴやマークなどの登録商標を無断で用いてリンクを張ることは、認められません。 情報発信元を誤認させるような形でリンクを張ることは、お断りします。
+            </p>
+            <p>
+              本ホームページのURLを変更する場合があり、貴サイトに通知することが不可能な場合がありますが、ご了承ください。
+            </p>
+            <p>
+              次に該当するホームページからのリンクは固くお断りいたします。
+            </p>
+            <ol>
+              <li>当社、または他社 (者)・他団体を誹謗中傷したり、信用失墜を意図する内容を含んだホームページ。</li>
+              <li>当社、または他社 (者)・他団体の著作権、商標権等の知的財産権、財産、プライバシーもしくは肖像権その他の権利を侵害する行為、または侵害するおそれのあるホームページ。</li>
+              <li>フレーム内で本ホームページが展開されるなど、当社のコンテンツであることが不明確となり、第三者に誤解を与える可能性があるホームページ
+                (必ず画面が完全に本ホームページに切り替わるか、新しいブラウザウインドウが開いて、本ホームページが表示される形でリンクを設定してください)。</li>
+              <li>上記各項目の他、法律、条例、規則を含む法令または公序良俗に違反する行為、本ホームページサービスの運営を妨害行為するおそれのあるホームページ。</li>
+            </ol>
+            <h3>その他</h3>
+            <p>
+              リンクに関連した賠償、苦情などに関して、当社は何ら責任を負いませんのでご了承ください。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>セキュリティ</h2>
+            <p>
+              当社は、情報セキュリティに関わる基本方針に基づき、「セキュリティ・ステートメント (宣言書)」を定め、社内外に公開するとともに、「個人情報保護方針」の遵守とあわせ、これに従うことを宣言いたします。
+            </p>
+            <a href="privacy.html">プライバシーポリシー</a>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>推奨環境</h2>
+            <p>
+              本ホームページでは、より安全で快適にご利用いただくために下記のブラウザを推奨致します。
+            </p>
+            <h3>Windowsをご利用の場合</h3>
+            <ol>
+              <li>Microsoft Internet Explorer 11以上</li>
+              <li>Microsoft Edge 最新版</li>
+              <li>Mozilla Firefox 最新版</li>
+              <li>Google Chrome 最新版</li>
+            </ol>
+            <h3>Macintoshをご利用の場合</h3>
+            <ol>
+              <li>Mozilla Firefox 最新版</li>
+              <li>Google Chrome 最新版</li>
+              <li>Safari 最新版</li>
+            </ol>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>プラグイン</h2>
+            <p>
+              本ホームページ内の一部のページでは、Adobe Flash Player (Flash Player 8.0以上) が必要となります。
+            </p>
+            <p>
+              また、PDFファイルを閲覧・印刷する場合にはAdobe Reader (Acrobat Reader 7.0以上)、動画を視聴する場合には、RealPlayer・RealOne PlayerまたはMicrosoft
+              Windows Media Playerなどが必要となります。
+            </p>
+            <p>
+              ※ 一部のページにおいて、最新バージョンが必要となります。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>クッキー (Cookie)</h2>
+            <p>
+              本ホームページでは、お客さまが訪問された際、より便利に閲覧していただくため、また継続的にホームページを改善するための情報を取得するなどの目的で、Cookieを使用しております。
+            </p>
+            <p>
+              Cookieは、本ホームページの運用に関連するサーバから、お客さまのブラウザに送信する情報で、お客さまのコンピューターに記録されます。<br>
+              ただし、記録される情報には、お客さまの氏名、ご住所、電話番号など個人を特定する情報は一切含まれておりません。。<br>
+              また、お客さまのコンピューターへ直接的な悪影響を及ぼすことはございません。
+            </p>
+            <p>
+              各ページのアクセス状況を把握するため、当社が業務委託を行う第三者企業のCookieを使用する場合もございます
+            </p>
+            <p>
+              お客さまご自身でブラウザの設定を操作することで、Cookieの受信を拒否することも可能です。その場合でも本ホームページの閲覧に大きな支障を来すことはございません。ブラウザの設定方法は各ソフトのヘルプページもしくは製造元へお問い合わせください。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>アクセスデータについて</h2>
+            <p>
+              本ホームページでは、お客さまのご利用 (アクセス)
+              状況を集計するための、収集タグを埋め込んでいるページがあります。集計したアクセスデータは、お客さまの利便性向上および本ホームページの品質維持・向上のため、利用させていただきます。
+            </p>
+          </div>
+        
+          <div class="page-style__block">
+            <h2>JavaScript</h2>
+            <p>
+              本ホームページでは、より快適にご利用いただくため一部のコンテンツにおいてJavaScriptを使用しています。
+            </p>
+            <p>
+              ご使用のブラウザ設定においてJavaScriptをオン (有効) にされていない場合に、正しく表示されないまたは操作ができない場合がありますので、ご了承ください。
+            </p>
+          </div>
+      </div>
+    </div>
+    <!--main end-->
+  
+  
+    <footer class="fotter">
+      <div class="footer__btn-wrap footer__btn-wrap--works">
+        <a href="#" class="footer__btn"><img src="assets/img/top/footer-btn.png" alt="問い合わせする"></a>
+      </div>
+  
+      <div class="footer__main footer-content">
+        <nav class="footer-content__nav">
+          <a href="#" class="footer-content__nav-item">会社案内</a>
+          <a href="#" class="footer-content__nav-item">施行事例</a>
+          <a href="#" class="footer-content__nav-item">採用情報</a>
+          <a href="#" class="footer-content__nav-item">お問合せ</a>
+          <a href="#" class="footer-content__nav-item">このサイトについて</a>
+          <a href="#" class="footer-content__nav-item">プライバシーポリシー</a>
+          <a href="#" class="footer-content__nav-item">サイトマップ</a>
+        </nav>
+        <div class="footer-content__ttl-wrap">
+          <div class="footer-content__logo">
+            <img src="assets/img/top/footer-logo.png" alt="株式会社美祢工務店">
+          </div>
+          <a href="tel:0837520097" class="footer-content__tel">
+            <img src="assets/img/top/footer-tel.png">
+          </a>
+          <a href="#" class="footer-content__top-btn top-to-js">
+            <img src="assets/img/top/top-btn.png">
+          </a>
+        </div>
+  
+      </div>
+      <div class="footer__bottom">
+        ©2023 美祢工務店. All Rights Reserved.
+      </div>
+    </footer>
+  
+  
+  
+  
+  
+  
+  
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js">
+    </script>
+  </body>
+  
+  </html>
