@@ -105,6 +105,12 @@ table {
 .main-top__ttl-wrap--works {
   background-image: url(../img/subpage/main-top-works.jpg);
 }
+.main-top__ttl-wrap--contact {
+  background-image: url(../img/subpage/main-top-contact.jpg);
+}
+.main-top__ttl-wrap--recruit {
+  background-image: url(../img/subpage/main-top-recruit.jpg);
+}
 .main-top__ttl {
   position: absolute;
   top: 50%;
@@ -1118,6 +1124,12 @@ header
   transform: translate(0, -100%);
   z-index: -1;
   position: relative;
+  padding: 40px;
+}
+@media (max-width: 600px) {
+  .header-sp {
+    padding: 24px;
+  }
 }
 .header-sp.active {
   opacity: 1;
@@ -1128,6 +1140,8 @@ header
 .header-sp__inner {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #fff;
+  padding: 12px;
 }
 /* =================================
 メインビジュアル

@@ -158,6 +158,13 @@ header
   transform: translate(0, -100%);
   z-index: -1;
   position: relative;
+  padding: 40px;
+
+
+  @include sp{
+    padding: 24px;
+
+  }
 
   &.active {
     opacity: 1;
@@ -170,6 +177,8 @@ header
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 12px;
   }
 
   &__ {}

@@ -3,7 +3,9 @@ $(function () {
   $(".header__btn-wrap").click(function () {
     $(".header-sp").toggleClass("active"); //ボタン自身に activeクラスを付与し
   });
-
+  $(".header-sp").click(function () {
+    $(".header-sp").toggleClass("active"); //ボタン自身に activeクラスを付与し
+  });
 
   // ヘッダー隠れる動き
 
